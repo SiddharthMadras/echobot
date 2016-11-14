@@ -8,7 +8,7 @@ var botConnectorOptions = {
 };
 
 // Create bot
-var bot = new builder.BotConnectorBot(botConnectorOptions);
+var bot = new builder.UniversalBot(botConnectorOptions);
 //bot.add('/', function (session) {
     
     //respond with user's message
