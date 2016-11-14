@@ -15,9 +15,9 @@ bot.add('/', function (session) {
     session.send("hello, ur first bot message is " + session.message.text);
 });
 
-bot.dialog('/', function (session) {
-    session.send("Hello World");
-});
+//bot.dialog('/', function (session) {
+   // session.send("Hello World");
+//});
 
 // Setup Restify Server
 var server = restify.createServer();
