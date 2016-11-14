@@ -9,15 +9,15 @@ var botConnectorOptions = {
 
 // Create bot
 var bot = new builder.BotConnectorBot(botConnectorOptions);
-bot.add('/', function (session) {
+//bot.add('/', function (session) {
     
     //respond with user's message
-    session.send("hello, ur first bot message is " + session.message.text);
-});
-
-//bot.dialog('/', function (session) {
-   // session.send("Hello World");
+   // session.send("hello, ur first bot message is " + session.message.text);
 //});
+
+bot.dialog('/', function (session) {
+   session.send("Hello World");
+});
 
 // Setup Restify Server
 var server = restify.createServer();
